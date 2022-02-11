@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+    <title>영화공간주안</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--bootstarp css cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!--swiper css cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!--awesome css cdn-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--google icon cdn-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media_main.css" type="text/css">
+    <!--jquery library-->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!--bootstarp js cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--swiper js cdn-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--js-->
+    <script src="js/main.js"></script>
+    <!--google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko"></script> 
+    <script> 
+        function initialize() { 
+      var myLatlng = new google.maps.LatLng(37.461394270797285, 126.68053515378858); // 좌표값
+        var mapOptions = { 
+              zoom: 17, // 지도 확대레벨 조정
+              center: myLatlng, 
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+        } 
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions); 
+        var marker = new google.maps.Marker({ 
+      position: myLatlng, 
+      map: map, 
+      title: "영화공간주안" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+      }); 
+        } 
+      window.onload = initialize;
+      </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">영화관 안내</a>
+                            <ul class="sub">
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">사업 안내</a></li>
+                                <li><a href="#">대관 안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <a href="#">상영작</a>
+                            <ul class="sub">
+                                <li><a href="#">현재 상영작</a></li>
+                                <li><a href="#">상영 예정작</a></li>
+                                <li><a href="#">지난 상영작</a></li>
+                                <li><a href="#">상영작 리뷰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">예매</a>
+                        </li>                      
+                        <li>
+                            <a href="#">소식·이벤트</a>
+                            <ul class="sub">
+                                <li><a href="#">소식</a></li>
+                                <li><a href="#">행사</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">안내</a></li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <a href="#">광장</a>
+                            <ul class="sub">
+                                <li><a href="#">영공주 뉴스</a></li>
+                                <li><a href="#">영공주 Q&A</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">멤버쉽</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu">
+                    <a href="#"></a>
+                </div>
+                <div class="sub_bg"></div>
+            </div>            
+        </header>
+        <section class="s1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide m1">
+                    <div class="main_txt">
+                        <h1>마이 뉴욕 다이어리</h1>
+                        <h2>"특별해지고 싶어요."</h2>
+                        <h3><내 사랑>, <콜 미 바이 유어 네임> 프로듀서</h3>
+                        <div class="main_btn">
+                            <a href="#">
+                                <p>예매하기</p>
+                                <span><img src="img/arrow.png" alt="화살표"></span>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide m2">
+                    <div class="main_txt">
+                        <h1>노웨어 스페셜</h1>
+                        <h2>내 아이를 키워줄, 새 부모를 찾습니다</h2>
+                        <h3>베니스국제영화제 4관왕 <스틸 라이프> 감독 작품</h3>                        
+                        <div class="main_btn">
+                            <a href="#">
+                                <p>예매하기</p>
+                                <span><img src="img/arrow.png" alt="화살표"></span>
+                            </a>
+                        </div>
+                    </div>                  
+                  </div>
+                  <div class="swiper-slide m3">
+                    <div class="main_txt">
+                        <h1>리 슨</h1>
+                        <h2>엄마는 나의 가장 좋은 리스너예요</h2>
+                        <h3>제 77회 베니스국제영화제 2관왕</h3>
+                        <div class="main_btn">
+                            <a href="#">
+                                <p>예매하기</p>
+                                <span><img src="img/arrow.png" alt="화살표"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="s2">
+            <div class="center">
+                <div class="row">
+                    <div class="col-sm-6 info_txt">
+                        <span>cinespace JUAN</span>
+                        <h1>영화공간주안</h1>
+                        <p>독특하고 재미있는 국내외 최신 예술영화, 소중한 한국독립영화<br>
+                            그리고 감동적인 다큐멘터리를 상영하는 예술영화관 4개관과<br>
+                            모두가 함께 공유할 수 있는 다목적 소공연장 컬쳐팩토리까지<br>
+                            다양한 영화예술을 향유할 수 있는 영화공간주안으로 오세요!</p>
+                    </div>
+                    <div class="col-sm-6 info_img">
+                        <img src="img/info_img.png" alt="info">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <h2 class="fade_animation">Now in theaters</h2>
+                <h1 class="fade_animation">현재 상영작</h1>
+                <div class="list up_animation">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide l1">
+                            <div class="l_bottom">
+                                <h3>해탄적일천</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>에드워드 양</p>
+                                    <span class="material-icons">calendar_month</span><p>2022-01-06</p>
+                                </div>                                
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l2">
+                            <div class="l_bottom">
+                                <h3>노웨어 스페셜</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>우베르토 파솔리니</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-29</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l3">
+                            <div class="l_bottom">                                
+                                <h3>램</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>발디마르 요한손</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-29</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l4">
+                            <div class="l_bottom">
+                                <h3>드라이브 마이 카</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>하마구치 류스케</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-23</p>
+                                </div> 
+                                                             
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l5">
+                            <div class="l_bottom">
+                                <h3>끝없음에 관하여</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>로이 앤더슨</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-16</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l6">
+                            <div class="l_bottom">
+                                <h3>피부를 판 남자</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>카우테르 벤 하니아</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-16</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l7">
+                            <div class="l_bottom">
+                                <h3>리슨</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>아나 호차</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-09</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide l8">
+                            <div class="l_bottom">
+                                <h3>마이 뉴욕 다이어리</h3>
+                                <div class="icon">
+                                    <span class="material-icons">movie</span><p>필립 팔라르도</p>
+                                    <span class="material-icons">calendar_month</span><p>2021-12-09</p>
+                                </div>                               
+                            </div>
+                            <div class="over">
+                                <a href="#">상세보기</a>
+                                <a href="#">예매하기</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center">
+                <h2 class="fade_animation">Coming soon</h2>
+                <h1 class="fade_animation">상영예정작</h1>
+                <div class="row">
+                    <div class="col-sm-6 s4_left">
+                        <div class="s4_img s4_ani1">
+                            <img src="img/poster_pc1.png" alt="poster">
+                        </div>
+                        <div class="s4_des s4_ani2">
+                            <h2>2022.01.13</h2>
+                            <h1>비올레타</h1>
+                            <h3>감독｜에바 이오네스코</h3>
+                            <p>"난 엄마의 소유물이 아니야"<br>
+                            "넌 이제 만인의 소유물이야"</p>
+                            <a href="#"><span>상세정보</span></a>                            
+                        </div>
+                    </div>
+                    <div class="col-sm-6 s4_right">
+                        <div class="s4_img s4_ani3">
+                            <img src="img/poster_pc2.png" alt="poster">
+                        </div>
+                        <div class="s4_des s4_ani4">
+                            <h2>2022.01.13</h2>
+                            <h1>프랑스</h1>
+                            <h3>감독｜브뤼노 뒤몽</h3>
+                            <p>"진짜일까? 당신이 보는 나"<br>
+                                &nbsp</p>
+                            <a href="#"><span>상세정보</span></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <div class="acc up_animation">
+                    <div class="acc_item acc1">
+                        <div class="acc_txt">
+                            <h2>GIFT</h2>
+                            <h1>상영기념</h1>
+                            <p>영화공간주안에서 상영기념으로 해당 상영작을 현장 유료 발권 시<br>
+                                선착순으로 다양한 경품을 증정합니다</p>
+                            <div class="arrow">
+                                <a href="#"><p>more</p><img src="img/arrow_slide.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                        <!--accodian swiper slide-->
+                        <div class="swiper accSwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide acc1-1"></div>
+                                <div class="swiper-slide acc1-2"></div>
+                                <div class="swiper-slide acc1-3"></div>
+                                <div class="swiper-slide acc1-4"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="acc_item acc2">
+                        <div class="acc_txt">
+                            <h2>GIFT</h2>
+                            <h1>현장경품</h1>
+                            <p>경품 증정에 해당하는 상영작을 현장에서 유료 발권 시<br>
+                                선착순으로 다양한 경품을 증정합니다</p>
+                            <div class="arrow">
+                                <a href="#"><p>more</p><img src="img/arrow_slide.png" alt="arrow"></a>
+                            </div>
+                        </div>    
+                        <!--accodian swiper slide-->
+                        <div class="swiper accSwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide acc2-1"></div>
+                                <div class="swiper-slide acc2-2"></div>
+                                <div class="swiper-slide acc2-3"></div>
+                                <div class="swiper-slide acc2-4"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="acc_item acc3 active">
+                        <div class="acc_txt">
+                            <h2>EVENT</h2>
+                            <h1>시네마토크</h1>
+                            <p>감독, 배우 또는 관련 전문가를 초청하여 영화의 기획 의도나 작품의 의미를 토론하고<br>영화의 깊이 있는 이야기를 들을 수 있는 영화공간주안만의 특별 상영회입니다</p>
+                            <div class="arrow">
+                                <a href="#"><p>more</p><img src="img/arrow_slide.png" alt="arrow"></a>
+                            </div>
+                        </div>
+                        <!--accodian swiper slide-->
+                        <div class="swiper accSwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide acc3-1"></div>
+                                <div class="swiper-slide acc3-2"></div>
+                                <div class="swiper-slide acc3-3"></div>
+                                <div class="swiper-slide acc3-4"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="acc_item acc4">
+                        <div class="acc_txt">
+                            <h2>SCREENING</h2>
+                            <h1>인생영화</h1>
+                            <p>SAY HELLO TO YOUR ALL TIME FAVORITE MOVIE!<br>
+                                영화공간주안에서 여러분의 인생영화를 만나보세요!</p>
+                            <div class="arrow">
+                                <a href="#"><p>more</p><img src="img/arrow_slide.png" alt="arrow"></a>
+                            </div>
+                        </div>    
+                        <!--accodian swiper slide-->
+                        <div class="swiper accSwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide acc4-1"></div>
+                                <div class="swiper-slide acc4-2"></div>
+                                <div class="swiper-slide acc4-3"></div>
+                                <div class="swiper-slide acc4-4"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="list">
+                    <ul>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/instagram.png" alt="instagram">
+                            <p>www.instagram.com<br>/cinespacejuan/</p>
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta1.jpg" alt="instagram1">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta2.jpg" alt="instagram2">
+                        </a></li>
+                        <li class="up_animation"><a href="#">
+                            <img src="img/insta3.jpg" alt="instagram3">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta4.jpg" alt="instagram4">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta5.jpg" alt="instagram5">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta6.jpg" alt="instagram6">
+                        </a></li>
+                        <li class="up_animation up_delay"><a href="#">
+                            <img src="img/insta7.jpg" alt="instagram7">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s7">
+            <div id="map_canvas" style="width:100%; height:100%;"></div>
+            <div class="s7_addr up_animation">
+                <div class="s7_img">
+                    <div class="s7_icon">
+                        <span class="material-icons">info</span>
+                        <p>info</p>
+                    </div>
+                </div>
+                <div class="s7_info">
+                    <h2>cinespace JUAN</h2>
+                    <h1>영화공간 주안</h1>
+                    <address>
+                        인천광역시 미추홀구 미추홀대로 716(주안동)<br>
+                        주안 메인프라자 7층<br>
+                        <p>-지하 주차장이 매우 혼잡하고 협소하오니 가급적 대중교통 이용을 권장합니다.</p>
+                    </address>
+                    <div class="s7_des time">
+                        <div class="time_icon">
+                            <span class="material-icons">schedule</span>
+                        </div>
+                        <div class="time_txt">
+                            <p>개관시간&nbsp;&#124;&nbsp;화요일~일요일 13:00~22:00</p>
+                            <span>월요일과, 1월 1일, 설날, 추석 당일 휴관</span>
+                        </div>
+                    </div>
+                    <br><br><br><br><br>
+                    <div class="s7_des ticket">
+                        <div class="ticket_icon">
+                            <span class="material-icons">confirmation_number</span>
+                        </div>
+                        <div class="ticket_txt">
+                            <p>예매요금&nbsp;&#124;&nbsp;일반 - 주중 : 6,000원</p>
+                            <p class="sale">주말<span>(금/토/일)</span> 및 공휴일 : 8,000원</p><br>
+                            <p>할인혜택&nbsp;&#124;&nbsp;경로, 청소년, 장애인, 국가유공자 : 5,000원</p>
+                            <span>(중복 할인 불가, 할인 혜택시 신분증 및 증명서 확인)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer_logo"></div>
+                <div class="footer_txt">
+                    <p>영화 상영 10분 이후 부터는 발권 및 입장이 불가능하오니 이점 양해 부탁드립니다.</p>
+                    <p class="copy">Copyright © 2010. CINESPACEJUAN.COM all right reserved.</p>
+                </div>
+                <div class="footer_right">
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <a href="#" class="fa_btn">Family Site</a>
+                        <a href="https://www.michuhol.go.kr/main/main.do">미추홀구청</a>
+                        <a href="https://www.haksanculture.or.kr/">미추홀학산문화원</a>
+                        <a href="http://www.haksansodam.com/">학산소담</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--top btn-->
+        <div class="top"><i class="fas fa-arrow-up"></i></div>
+    </div>
+    <!--site map-->
+    <div class="sitemap">
+        <div class="site_logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="site_close">
+            <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="site_nav">
+            <ul>
+                <li>
+                    <a href="#">영화관 안내</a>
+                    <ul class="sub">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">사업 안내</a></li>
+                        <li><a href="#">대관 안내</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>                        
+                <li>
+                    <a href="#">상영작</a>
+                    <ul class="sub">
+                        <li><a href="#">현재 상영작</a></li>
+                        <li><a href="#">상영 예정작</a></li>
+                        <li><a href="#">지난 상영작</a></li>
+                        <li><a href="#">상영작 리뷰</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예매</a>
+                </li>                      
+                <li>
+                    <a href="#">소식·이벤트</a>
+                    <ul class="sub">
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">행사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">안내</a></li>
+                    </ul>
+                </li>                        
+                <li>
+                    <a href="#">광장</a>
+                    <ul class="sub">
+                        <li><a href="#">영공주 뉴스</a></li>
+                        <li><a href="#">영공주 Q&A</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">멤버쉽</a>
+                </li>
+            </ul>
+        </div>
+        <div class="site_sns">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
