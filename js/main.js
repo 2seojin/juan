@@ -209,10 +209,22 @@ $(document).ready(function(){
       });
 
     //movie list swiper slide
-    var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        loop:true,
+    var swiper2 = new Swiper(".mySwiper2", {        
+                loop:true,
+        breakpoints:{
+            1200:{
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+            480:{
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            },
+            320:{
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            }
+        }
     });
 
     //accordion gallery
