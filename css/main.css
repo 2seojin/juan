@@ -937,11 +937,13 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
     }
     footer .center .footer_right .sns ul li {
         width: 3vw;
+        margin-right: 8vw;
+        margin-bottom: 3vw;
     }
     footer .center .footer_right .sns ul li i {
         color: #fff;
         font-size: 2vw;
-        margin-left: 5.2vw;
+        margin-left: 4vw;
     }
     footer .center .footer_right .family {        
         border-radius: 25px;
@@ -990,6 +992,9 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
         z-index: 50;
         cursor: pointer;
         border-radius: 20px;
+    }
+    .top span {
+        margin-top: 0.5vw;
     }
     .sitemap {
         position: fixed;
